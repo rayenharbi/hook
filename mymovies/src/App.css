@@ -1,0 +1,63 @@
+body {
+	background-color: #141414;
+	color: #ffffff;
+}
+.movie-list{
+  display: grid;
+  gap: 50px 100px;
+  grid-template-columns: auto auto ;
+  padding: 15px;
+}
+
+.movie_card{
+  
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+.movie_card{
+  position: relative;
+  transition: transform 0.2s;
+  border-radius: 20px;
+}
+.movie_card:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.locandina{
+  border-radius: 20px;
+  width: 250px;
+}
+h3{
+  color: red;
+}
+p{
+  color: gray;
+}
+
+h1{
+  color: red;
+ 
+}
+svg{
+  color: gold;
+}
+.navbarr{
+  display: flex;
+  justify-content: end;
+   padding-right: 20px;
+   padding-top: 10px;
+
+}
+input{
+  width: 150px;
+height: 20px;
+border-radius: 5px;
+
+}
+button{
+  width: 60px;
+  height: 35px;
+}
+
+
