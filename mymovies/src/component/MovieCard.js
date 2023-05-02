@@ -1,31 +1,33 @@
-// MovieCard.js
 import React from 'react'
 import StarRatingComponent from 'react-star-rating-component';
-const MovieCard = ({movies}) => {
+import {Link} from "react-router-dom";
+const MovieCard = ({movie}) => {
   return (
     <div>
-      <div class="movie_card" id="bright">
-  <div class="info_section">
-    <div class="movie_header">
-      <img class="locandina" src={movies.main_img} alt='ay hkeya'/>
-      <h1>{movies.title}</h1>
+      <div className="movie_card" id="bright">
+  <div className="info_section">
+    <div className="movie_header">
+      <img className="locandina" src={movie.posterUrl} alt='ay hkeya'/>
+      
+      <h1>{movie.title}</h1>
+      <Link to={`/movies/${movie.id}/description`}> View Details</Link>
       <StarRatingComponent 
           name="rate1" 
           starCount={5}
-          value={movies.rate}
+          value={movie.rate}
          
         /> <br/>
-      <span class="minutes">{movies.duration}</span>
-      <p class="type">{movies.genre}</p>
+      <span className="minutes">{movie.duration}</span>
+      <p className="type">{movie.genre}</p>
     </div>
-    <div class="movie_desc">
-      <p class="text">
-        {movies.description}
+    <div className="movie_desc">
+      <p className="text">
+        {movie.description}
       </p>
     </div>
    
   </div>
-  <div class="blur_back "></div>
+  <div className="blur_back "></div>
 </div>
 </div>
   )

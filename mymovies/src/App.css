@@ -1,8 +1,9 @@
-body {
+.App {
 	background-color: #141414;
 	color: #ffffff;
 }
-.movie-list{
+.movie_list
+{
   display: grid;
   gap: 50px 100px;
   grid-template-columns: auto auto ;
