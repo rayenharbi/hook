@@ -2,10 +2,11 @@ import React from "react";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
+import "./Detail.css";
 
 
 
-const Details = ({ movie }) => {
+const MovieDetails = ({ movie }) => {
   const { id } = useParams();
   const foundMovie = movie.find((el) => el.id === +id);
   return (
@@ -71,4 +72,4 @@ const Details = ({ movie }) => {
     </div>
   );
 };
-export default Details;
+export default MovieDetails;

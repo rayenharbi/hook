@@ -10,7 +10,7 @@ const MovieCard = ({movie}) => {
       <img className="locandina" src={movie.posterUrl} alt='ay hkeya'/>
       
       <h1>{movie.title}</h1>
-      <Link to={`/movies/${movie.id}/description`}> View Details</Link>
+     
       <StarRatingComponent 
           name="rate1" 
           starCount={5}
@@ -24,6 +24,7 @@ const MovieCard = ({movie}) => {
       <p className="text">
         {movie.description}
       </p>
+      <Link to={`/movie/${movie.id}`}> trailer </Link>
     </div>
    
   </div>
